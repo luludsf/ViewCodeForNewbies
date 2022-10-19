@@ -2,7 +2,7 @@
 //  UIViewExtensions.swift
 //  ViewCodeForNewbies
 //
-//  Created by Luana Duarte on 07/10/22.
+//  Created by Kaká Sena on 19/10/22.
 //
 
 import Foundation
@@ -20,4 +20,9 @@ extension UIView {
             bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: bottom)
         ])
     }
+    
+    func addBorderLine(width: CGFloat = 1, color: UIColor) {
+        layer.borderWidth = width
+        layer.borderColor = color.cgColor
+ }
 }
