@@ -2,7 +2,7 @@
 //  UIViewExtensions.swift
 //  ViewCodeForNewbies
 //
-//  Created by Luana Duarte on 07/10/22.
+//  Created by Kaká Sena on 19/10/22.
 //
 
 import Foundation
@@ -30,5 +30,11 @@ extension UIView {
         layer.masksToBounds = false
         layer.cornerRadius = self.frame.height / 2
         clipsToBounds = true 
-       }
+    }
+       
+    func addBorderLine(width: CGFloat = 1, color: UIColor) {
+        layer.borderWidth = width
+        layer.borderColor = color.cgColor
+    }
+
 }
