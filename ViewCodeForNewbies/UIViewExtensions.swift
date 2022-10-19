@@ -20,4 +20,10 @@ extension UIView {
             bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: bottom)
         ])
     }
+    
+    func makeRounded() {
+        layer.masksToBounds = false
+        layer.cornerRadius = self.frame.height / 2
+        clipsToBounds = true
+    }
 }
